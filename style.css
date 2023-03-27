@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    background-image: url(https://media2.giphy.com/media/d9QiBcfzg64Io/giphy.gif);
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    color: rgba(251, 255, 2, 0.678);
+    font-size: 45px;
+    font-family: 'Righteous', cursive;
+}
+
+.pacman{
+    text-align: center;
+    margin-top: 90px;
+    font-size: 45px;
+}
+
+button{
+    background: rgba(0, 0, 0, 0.808); 
+    color: greenyellow;
+    height: 50px;
+    margin: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+input{
+    background: rgba(238, 255, 0, 0.349);
+    color: greenyellow;
+    font-family: 'Righteous', cursive;
+}
+
+footer{
+    color: rgb(0, 0, 0);
+    background: rgb(99, 96, 96);
+    font-size: 10px;
+    font-family: 'Righteous', cursive;
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0vh;
+    left: 0;
+    padding: 0px;
+    text-align: center;
+   }

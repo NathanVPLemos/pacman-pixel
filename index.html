@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <div class="pacman">
+        <h1>Calculadora IMC</h1>
+
+        <label for="peso">Peso (kg):</label>
+        <input id="peso" name="peso" type="number">
+
+        <br>
+
+        <label for="altura">Altura :</label>
+        <input id="altura" name="altura" type="number">
+
+        <br>
+
+        <button onclick="CalculadoraIMC()">Calculadora</button>
+
+        <br>
+
+        <p>Seu Índice de Massa Corporal é: <span id="resultado"></span></p>
+
+        <script>
+            function CalculadoraIMC() {
+                const peso = document.getElementById('peso').value;
+                const altura = document.getElementById('altura').value;
+                const imc = peso / (altura ** 2)
+
+                document.getElementById('resultado').textContent = imc.toFixed(2);
+            }
+
+            let TituloDinamico = document.title;
+            window.addEventListener("blur", () => {
+                document.title = "THUNDER, THUNDER, THUNDERCATS!"
+            });
+
+            window.addEventListener('focus', () =>
+                document.title = TituloDinamico
+            )
+
+        </script>
+    </div>
+
+
+    <footer>Criado por Nathan Vargas P.L. &copy;</footer>
+
+
+</body>
+
+</html>
